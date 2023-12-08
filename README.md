@@ -10,6 +10,6 @@ Repozytorium składa się z następujących części:
 3. flowcontrol - pętle `while` i `for`
 4. arrays - tablice
 
-# 2. Kurs:
+## 2. Kurs:
 
 1. methods - 
