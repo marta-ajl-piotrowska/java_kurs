@@ -1,8 +1,5 @@
 package course.methods;
 
-import java.util.Arrays;
-import java.util.Random;
-
 public class Main02 {
 
     public static void main(String[] args) {

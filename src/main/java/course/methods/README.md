@@ -1,77 +1,118 @@
-## Zadanie 1
+## Zadanie 1 - rozwiązywane z wykładowcą
 
-W pliku `Main01.java`:
+W pliku `Main01.java` napisz metodę o sygnaturze:
 
-1. stwórz 50-elementową tablicę o nazwie `mainTab` z kolejnymi liczbami całkowitymi od 0 do 49,
-2. wypisz na konsoli po kolei elementy tej tablicy, po dziesięć w każdym wierszu,
-3. liczby jednocyfrowe uzupełnij dodatkowym zerem na początku (np. 03).
+`public static int multiply(int multipler, int index)`,
 
-```
-00, 01, 02, 03, 04, 05, 06, 07, 08, 09,
-10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
-20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
-30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
-40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
-```
+która zwróci wartość zmiennej `multipler` pomnożonej przez wartość argumentu `index`.
 
 
 ## Zadanie 2
 
-W pliku `Main02.java`:
+W pliku `Main02.java` napisz metodę o sygnaturze:
 
-1. przy użyciu pętli `for` stwórz tablicę o nazwie `randNumbers`, zawierającą 20 losowych liczb z zakresu `0-100` (do otrzymania losowej wartości użyj sposobu opisanego w snippetach),
-2. wypisz w konsoli minimalną wartość z tablicy.
+`public static int square(int num)`,
+
+która zwróci wartość `num` podniesioną do kwadratu.
 
 
 ## Zadanie 3
 
-W pliku `Main03.java`:
+W pliku `Main03.java` napisz publiczną metodę `convertToUsd`, która przyjmuje parametr `pln`, czyli kwotę w złotówkach.
+Metoda ma zwrócić podaną kwotę w dolarach amerykańskich.
 
-1. stwórz 10-elementową tablicę wypełnioną pojedynczą wartością "2". Tablica powinna wyglądać następująco:
-    ````
-    [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
-    ````
-2. zadanie wykonaj **bez użycia pętli `for`**.
+Jako przelicznik przyjmij wartość 4.04 PLN = 1 USD.
 
 
 ## Zadanie 4
 
-W pliku `Main04.java`:
+W pliku `Main04.java` napisz publiczną metodę `createName`, która przyjmie następujące parametry:
 
-1. stwórz tablicę o nazwie `numbers` zawierającą 10 dowolnych liczb,
-2. stwórz zmienną tablicową `reverse` i umieść w niej elementy tablicy `numbers` w odwrotnej kolejności,
-3. wypisz na konsoli elementy z tablicy `reverse`.
+* `name`: imię,
+* `surname`: nazwisko,
+* `nickname`: pseudonim.
 
-Dla tablicy o elementach:
-```
-3, 5, 7, 2, 1
-```
-otrzymamy wynik:
-```
-1, 2, 7, 5, 3
-```
+Metoda ma zwrócić łańcuch tekstowy z połączonymi parametrami, w postaci: "imię pseudonim nazwisko".
 
 
 ## Zadanie 5
 
-W pliku `Main05.java`:
+W pliku `Main05.java` napisz publiczną metodę `calculateNetto`, która przyjmie argumenty:
 
-1. stwórz tablicę o nazwie `numbers` zawierającą 10 dowolnych liczb,
-2. posortuj rosnąco tablicę wykorzystując metody klasy `Arrays`,
-3. wyświetl w konsoli posortowaną tablicę – również przy pomocy metody z klasy `Arrays`.
+* `gross`: kwotę brutto ceny zakupu,
+* `vat`: wartość podatku VAT. Możesz założyć, że VAT ma być liczbą zmiennoprzecinkową z zakresu 0 &ndash; 1.
+
+Metoda ma zwrócić wartość netto ceny. Napisz w komentarzu, jakie obliczenia musisz wykonać.
 
 
 ## Zadanie 6
 
-W pliku `Main06.java`:
+W pliku `Main06.java` napisz publiczną metodę `checkMaturity`, która:
 
-1. stwórz tablicę o nazwie `numbers` zawierającą 10 dowolnych liczb,
-2. stwórz drugą tablicę, nazwij ją `secondNumbers`, wypełnij 10 dowolnymi liczbami,
-3. stwórz trzecią tablicę zawierającą sumy elementów, które mają w tablicach pozycję o tym samym indeksie.
+* przyjmie parametr liczbowy `age` oznaczający wiek użytkownika,
+* sprawdzi, czy użytkownik jest pełnoletni,
+* zwróci wartość `true` &ndash; jeśli jest pełnoletni,
+* zwróci wartość `false` &ndash; jeśli nie jest.
 
-Dla przykładowych tablic:
-```java
-int[] numbers = {2, 3};
-int[] secondNumbers = {3, 4};
-```
-wynikiem będzie tablica o elementach `5 i 7`.
+
+## Zadanie 7
+
+W pliku `Main07.java` napisz publiczną metodę `checkEvenOdd`, która:
+
+* przyjmie parametr liczbowy `number`,
+* będzie zwracać wartość typu `String`,
+* zwróci wynik "even", jeśli liczba jest parzysta,
+* zwróci wynik "odd", jeśli liczba jest nieparzysta.
+
+
+## Zadanie 8
+
+W pliku `Main08.java` napisz publiczną metodę `maxOfThree`, która przyjmie trzy parametry liczbowe. Metoda ma zwrócić największą liczbę.
+
+
+
+## Zadanie 9
+
+W pliku `Main09.java` napisz publiczną metodę `factorial`,
+która przyjmie jako parametr liczbę naturalną `n`.
+
+Metoda ma zwrócić wartość `n!`,czyli wynik mnożenia wszystkich liczb naturalnych w zakresie `1...n`.
+
+
+## Zadanie 10* (Dodatkowe)
+
+Gdy klub piłkarski A gra dwumecz z klubem piłkarskim B, oznacza to, że grają jeden mecz na boisku drużyny A i jeden na boisku drużyny B.
+
+Wygrywa ta drużyna, która zdobędzie więcej goli w obu meczach.
+
+W przypadku, gdy drużyny zdobyły tyle samo bramek, gole zdobyte na wyjeździe liczą się jako "trochę ważniejsze"
+i wygrywa ta drużyna, która zdobyła więcej bramek na wyjeździe.
+
+Remis w dwumeczu wypada wtedy, gdy obie drużyny zdobyły  tyle samo bramek i mają tyle samo bramek na wyjeździe.
+
+----
+**Na przykład:**
+
+W Pucharze Polski grają dwa zespoły: **Grom** i **Błyskawica**. Zespoły rozegrały następujące mecze:
+
+**Gospodarz: Grom.**
+
+Grom 0:2 Błyskawica
+
+**Gospodarz: Błyskawica.**
+
+Błyskawica 1:3 Grom
+
+Sumaryczny wynik dwumeczu wynosi 3:3. Jednak Grom na wyjeździe zdobył 3 bramki, a Błyskawica tylko 2. Zatem wygrywa Grom.
+
+----
+
+Napisz metodę, `footballWin`, która przyjmie następujące parametry:
+
+* gole zdobyte przez zespół A w pierwszym meczu (na boisku zepołu A),
+* gole zdobyte przez zespół B w pierwszym meczu (na boisku zepołu A),
+* gole zdobyte przez zespół A w drugim meczu (na boisku zespołu B),
+* gole zdobyte przez zespół B w drugim meczu (na boisku zespołu B),
+
+po czym zwróci `1`, jeśli dwumecz wygrał zespół A, `2` &ndash; jeśli B. W przypadku remisu, zwróć `X`.
+Wynik ma być łańcuchem tekstowym, a nie liczbą!
